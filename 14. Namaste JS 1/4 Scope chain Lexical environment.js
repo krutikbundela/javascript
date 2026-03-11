@@ -9,7 +9,7 @@
  * * * When a variable is accessed, the JavaScript engine looks for it in the current lexical environment first.
  * * * If not found, it traverses the outer lexical environments until it finds the variable or reaches the global scope.
  * * * This chain of environments is called the scope chain.
- *
+ * 
  */
 
 function a() {

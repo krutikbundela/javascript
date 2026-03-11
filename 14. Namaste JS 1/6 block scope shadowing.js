@@ -1,5 +1,5 @@
 /**
- * What is Block ?
+ *? What is Block ?
 Block is defined by curly braces i.e { .. }
 Block is also know as Compound Statement.
 Why Block is required in JS?
@@ -16,7 +16,7 @@ var a = 10;
 console.log(a);
 }
 — — — — — — — — — — — — — — — — — — — — — — —
-What is Block Scoped?
+*?What is Block Scoped?
 Block Scoped means what all variables and functions we can access inside block.
 
 To understand in details, let’s take an example and run it:
@@ -39,4 +39,30 @@ In 6.1 screenshot, you can see three scopes ::::
 Global: memory reserved for var
 Script: separate memory for let and const outside block scope
 Block: separate memory for variables inside scope
+ */
+/**
+ * ? Shadowing:
+Shadowing is a concept in programming where a variable declared within a certain scope (like a block or function) has the same name as a variable declared in an outer scope. When this happens, the inner variable "shadows" or hides the outer variable within its scope. This means that when you reference the variable name within the inner scope, it will refer to the inner variable rather than the outer one.
+
+Example of Shadowing:
+
+ var x = 10; // Outer variable
+    {
+        var x = 20; // Inner variable that shadows the outer variable
+        console.log(x); // Output: 20 (refers to the inner variable)
+    }
+    console.log(x); // Output: 20 (refers to the inner variable)
+
+
+    
+*? But in case of let and const, they are block scoped, so they will not shadow the outer variable if they have the same name. Instead, they will create a new variable in the inner scope.
+
+Example of Shadowing with let and const:
+let x = 10; // Outer variable
+{
+    let x = 20; // Inner variable that does not shadow the outer variable
+    console.log(x); // Output: 20 (refers to the inner variable)
+}
+console.log(x); // Output: 10 (refers to the outer variable)
+
  */

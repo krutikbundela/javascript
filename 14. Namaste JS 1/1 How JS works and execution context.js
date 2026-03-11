@@ -24,6 +24,8 @@
  * 
  * 
  * ? JS is a synchronous single-threaded language.
+ * * * Synchronous means that the code is executed line by line, and each line of code is executed only after the previous line has been executed.
+ * * * * Single-threaded means that there is only one thread of execution, and only one line of code can be executed at a time.(in a specific order)
  * 
  * at Global Execution context level window is the global object and this is the global object.
  * 

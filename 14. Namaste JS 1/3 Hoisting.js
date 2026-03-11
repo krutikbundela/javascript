@@ -34,11 +34,11 @@ let and const are hoisted too, but not initialized. They exist in a "temporal de
 console.log(y); // ❌ ReferenceError
 let y = 10;
 🔍 Summary Table
-Type	Hoisted?	Initialized?	Usable before definition?
-var	✅ Yes	✅ As undefined	✅ Yes (but undefined)
-let / const	✅ Yes	❌ No (TDZ)	❌ No
-Function Decl.	✅ Yes	✅ Fully	✅ Yes
-Function Expr.	✅ (var)	❌	❌ No
+Type	          Hoisted?	Initialized?	      Usable before definition?
+var	            ✅ Yes	  ✅ As undefined	   ✅ Yes (but undefined)
+let / const	    ✅ Yes	  ❌ No (TDZ)	       ❌ No
+Function Decl.	✅ Yes	  ✅ Fully	           ✅ Yes
+Function Expr.	✅ (var)	❌	                 ❌ No
 
 🧠 Why It Matters
 Hoisting can lead to confusing bugs if you're not aware of it—especially with var and function expressions. Always declare variables at the top of their scope and prefer let/const to avoid issues.

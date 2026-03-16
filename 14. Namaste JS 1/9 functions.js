@@ -1,4 +1,4 @@
-//! Function Statement aka Function Declaration
+  //! Function Statement aka Function Declaration
 a(); // Calling the function
 function a() {
   console.log("a called");

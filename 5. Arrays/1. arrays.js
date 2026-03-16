@@ -67,10 +67,9 @@ const moreNumbers = Array.from('hi!');
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
-// let fruits = ["apple", "orange", "banana", "apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
-// let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
-// fruits[2] = "vgtvgvgvgh";
-// console.log(fruits.length);
+// let fruits = ["apple", "orange", "banana"];
+// fruits[2] = "mango";
+// console.log(fruits); //apple,orange,banana 
 
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
@@ -82,7 +81,7 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
-// for...of  loop:
+// for...of  loop: 
 // for (let item of fruits) {
 //   console.log(item);
 // }
@@ -110,10 +109,13 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 const myForEachArr =  fruits.forEach((fruit, index, arr) => {
   console.log(` my fav fruit is at index=${index}  value=${fruit}`);
-   `${fruit}`
-    console.log(arr);
+  `${fruit}`;
+  console.log(arr); // whole array for each iteration (5 vaar print thse ["apple", "orange", "mango", "grapes", "banana"])
 });
-console.log(myForEachArr);
+console.log(myForEachArr); // undefined
+
+// *! ForEach never returns.
+
 
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
@@ -123,8 +125,10 @@ console.log(myForEachArr);
 //   return ` my fav fruit is at index=${index}  value=${fruit}`;
 // });
 
-// console.log(myMapArr);
+// console.log(myMapArr); 
 // console.log(fruits);
+
+//*! map returns a new array
 
 //todo Practice Time
 //! write a program to Multiply each element with 2

@@ -102,8 +102,8 @@ Second script executed
 Both scripts are downloaded in parallel.
 They execute in order after the HTML document has been fully parsed.
 Summary
-defer allows scripts to download in parallel while ensuring execution happens after HTML parsing.
-Scripts with defer execute in the order they appear in the HTML document.
+*?defer allows scripts to download in parallel while ensuring execution happens after HTML parsing.
+*?Scripts with defer execute in the order they appear in the HTML document.
 It improves page load performance without blocking the rendering process.
 Let me know if you need more examples or further clarification! 😊🚀
 
@@ -189,10 +189,10 @@ Scripts execute in the order they appear.
 Summary
 async:
 
-Loads scripts asynchronously and executes them immediately when downloaded.
-Does not wait for HTML parsing or other scripts.
-Scripts may execute in any order.
-Use async for scripts that do not depend on other scripts or the DOM structure.
+*?Loads scripts asynchronously and executes them immediately when downloaded.
+*?Does not wait for HTML parsing or other scripts.
+*?Scripts may execute in any order.
+*?Use async for scripts that do not depend on other scripts or the DOM structure.
 
 Let me know if you'd like further examples or clarification! 🚀
 

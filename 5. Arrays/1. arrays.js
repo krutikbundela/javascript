@@ -76,7 +76,7 @@ const moreNumbers = Array.from('hi!');
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
@@ -107,12 +107,12 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-const myForEachArr =  fruits.forEach((fruit, index, arr) => {
-  console.log(` my fav fruit is at index=${index}  value=${fruit}`);
-  `${fruit}`;
-  console.log(arr); // whole array for each iteration (5 vaar print thse ["apple", "orange", "mango", "grapes", "banana"])
-});
-console.log(myForEachArr); // undefined
+// const myForEachArr =  fruits.forEach((fruit, index, arr) => {
+//   console.log(` my fav fruit is at index=${index}  value=${fruit}`);
+//   `${fruit}`;
+//   console.log(arr); // whole array for each iteration (5 vaar print thse ["apple", "orange", "mango", "grapes", "banana"])
+// });
+// console.log(myForEachArr); // undefined
 
 // *! ForEach never returns.
 
@@ -144,7 +144,7 @@ console.log(myForEachArr); // undefined
 // const doubleValue = numbers.map((curElem) => {
 //   return curElem * 2;
 //   //   Creates a new array with transformed elements
-// });
+// }); 
 
 // console.log(doubleValue);
 
@@ -194,13 +194,13 @@ console.log(myForEachArr); // undefined
 //* syntax
 //? splice(index, howManyDelete, item1, ....., itemX)
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(2, 2 , "ghvvhg");
+// fruits.splice(2, 1, "krutik");
 // fruits.splice(0); //delete all items
 // console.log(fruits);
 
 // //! what if you want to add the element at the end
-// fruits.splice(-1, 0,"vvgvhg");
-// fruits.splice(1, 0, "grapes");
+// fruits.splice(-1, 0,"krutik");   //[ 'apple', 'orange', 'banana', 'krutik', 'mango' ]
+// fruits.splice(fruits.length, 0, "grapes");
 // console.log(fruits);
 
 
@@ -475,7 +475,7 @@ console.log(myForEachArr); // undefined
 // console.log(numbers.indexOf("banana" , 3)); 
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
-const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
 // const result1 = numbers.indexOf(6 ,4);
 // console.log(result1);
 // const result2 = numbers.lastIndexOf(6);
@@ -489,7 +489,7 @@ const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
 // includes(searchElement, fromIndex);
 
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-const result = numbers.includes(2 ,4 );
+// const result = numbers.includes(2 ,4 );
 // console.log(numbers.indexOf());
 
 //todo Challenge time
@@ -557,9 +557,9 @@ const result = numbers.includes(2 ,4 );
 // UseCase: In E-commerce website when we want to Remove or delete any product from addToCart page.
 //! Ex. le'ts say user wants to delete value 6.
 // let value = 6;
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+// const q = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 
-// let updatedCart = numbers.filter((curElem) => {
+// let updatedCart = q.filter((curElem) => {
 //   return curElem !== value;
 // });
 
@@ -576,7 +576,7 @@ const result = numbers.includes(2 ,4 );
 // // Filter products with a price less than or equal to 500
 
 // const filterProducts = products.filter((curElem) => {
-//   //   console.log(curElem.price <= 500);
+  //   console.log(curElem.price <= 500);
 //   return curElem.price <= 500;
 // });
 // console.log(filterProducts);
@@ -652,7 +652,7 @@ const result = numbers.includes(2 ,4 );
 // Copy code
 // const people = [{ name: 'Alice' }, { name: 'Bob' }, { name: 'Charlie' }];
 // console.log(people.reverse()); 
-// // Output: [{ name: 'Charlie' }, { name: 'Bob' }, { name: 'Alice' }]
+// Output: [{ name: 'Charlie' }, { name: 'Bob' }, { name: 'Alice' }]
 // In this example:
 
 // The objects in the array are reversed.
@@ -985,7 +985,7 @@ const result = numbers.includes(2 ,4 );
 
 //! 1: Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
 // Original array of strings
-const words = ["APPLE", "banana", "cherry", "date"];
+// const words = ["APPLE", "banana", "cherry", "date"];
 
 // const result = words.map((curElem) => {
 //   return curElem.toLowerCase();
@@ -1035,13 +1035,13 @@ const words = ["APPLE", "banana", "cherry", "date"];
 // array (optional): The array reduce was called upon.
 // initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.
 
-const productPrice = [100, 200, 300, 400, 500];
+// const productPrice = [100, 200, 300, 400, 500];
 
-const totalPrice = productPrice.reduce((accum, curElem) => {
-  return accum + curElem;
-}, 0);
+// const totalPrice = productPrice.reduce((accum, curElem) => {
+//   return accum + curElem;
+// }, 0);
 
-console.log(totalPrice);
+// console.log(totalPrice);
 
 
 // Chaining Methods in JavaScript

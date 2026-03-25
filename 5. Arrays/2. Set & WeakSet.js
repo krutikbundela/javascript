@@ -1,6 +1,5 @@
 // Set
-// ChatGPT said:
-// ChatGPT
+
 // In JavaScript, a Set is a built-in collection object that allows you to store unique values, meaning no duplicates. Sets can store values of any type, including primitives or objects.
 
 // Key Characteristics of a Set
@@ -178,8 +177,7 @@
 
 // You said:
 // weakset
-// ChatGPT said:
-// ChatGPT
+
 // A WeakSet is a collection in JavaScript that behaves similarly to a Set, but with a few key differences. The primary distinction is that a WeakSet only stores objects and its references are weak, meaning they do not prevent garbage collection if there are no other references to the object.
 
 // Key Characteristics of a WeakSet

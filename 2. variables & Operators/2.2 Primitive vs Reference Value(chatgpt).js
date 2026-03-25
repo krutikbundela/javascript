@@ -1,6 +1,5 @@
 // primitive and reference values 
-// ChatGPT said:
-// ChatGPT
+
 // In JavaScript, data types are divided into Primitive Values and Reference Values (also known as Objects). Understanding these two categories is crucial because they behave differently when assigned, compared, or passed to functions.
 
 // Primitive Values

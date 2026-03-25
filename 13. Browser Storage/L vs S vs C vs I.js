@@ -1,6 +1,5 @@
 // local vs session vs cookie vs indexedb
-// ChatGPT said:
-// ChatGPT
+
 // Here’s a detailed comparison of Local Storage, Session Storage, Cookies, and IndexedDB in terms of usage, features, and limitations:
 
 // Comparison Table

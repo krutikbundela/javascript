@@ -1,6 +1,5 @@
 // function vs methods
-// ChatGPT said:
-// ChatGPT
+
 // In JavaScript, functions and methods are closely related but serve slightly different roles based on how they are defined and used. Here's a clear distinction between the two:
 
 // 1. Functions

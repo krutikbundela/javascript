@@ -103,8 +103,7 @@ anotherWay();
 
 
 // bind()
-// ChatGPT said:
-// ChatGPT
+
 // The bind() method in JavaScript is used to create a new function with a specific value of this and, optionally, pre-defined arguments. It is particularly useful for controlling the this context of a function, especially in scenarios where the this value might otherwise change dynamically.
 
 // Syntax
@@ -255,8 +254,7 @@ anotherWay();
 
 // You said:
 // call() 
-// ChatGPT said:
-// ChatGPT
+
 // The call() method in JavaScript is used to invoke a function with a specific this value and arguments provided individually. It allows you to explicitly set the this context for a function, which is useful when you want to control the execution context, especially in situations like callbacks or event handling.
 
 // Syntax of call()
@@ -384,8 +382,7 @@ anotherWay();
 
 // You said:
 // apply()
-// ChatGPT said:
-// ChatGPT
+
 // The apply() method in JavaScript is very similar to the call() method. It is used to invoke a function with a specific this value, but the main difference lies in how arguments are passed to the function. While call() takes arguments individually, apply() takes the arguments as an array or array-like object.
 
 // Syntax of apply()

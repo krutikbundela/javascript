@@ -1,6 +1,5 @@
 // rest operator
-// ChatGPT said:
-// ChatGPT
+
 // The rest operator (...) in JavaScript is used to collect the remaining elements of an array, object, or function arguments into a single variable. It allows for more flexible and concise code when dealing with collections of data.
 
 // How the Rest Operator Works

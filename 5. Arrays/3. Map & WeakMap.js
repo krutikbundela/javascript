@@ -1,6 +1,5 @@
 // Map
-// ChatGPT said:
-// ChatGPT
+
 // A Map is a built-in collection object in JavaScript that allows you to store key-value pairs. Unlike objects, Map can have keys of any type (not just strings or symbols), and it maintains the insertion order of the elements.
 
 // Key Characteristics of a Map
@@ -232,8 +231,7 @@
 
 // You said:
 // weakmap
-// ChatGPT said:
-// ChatGPT
+
 // A WeakMap is a collection of key-value pairs where keys are objects and the references to those keys are weak. This means that if there are no other references to an object stored as a key in a WeakMap, the entry can be garbage collected, allowing for more efficient memory management.
 
 // Key Characteristics of a WeakMap

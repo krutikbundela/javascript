@@ -580,8 +580,7 @@ const moreNumbers = Array.from('hi!');
 //*  How to Reverse an Array
 //* =========================================
 // reverse()
-// ChatGPT said:
-// ChatGPT
+
 // The reverse() method in JavaScript is used to reverse the order of the elements in an array. This method modifies the original array by reversing its elements in place and returns a reference to the same array.
 
 // Syntax of reverse()
@@ -713,8 +712,7 @@ const moreNumbers = Array.from('hi!');
 //*  join and split
 //* =========================================
 // join
-// ChatGPT said:
-// ChatGPT
+
 // The join() method in JavaScript is used to join all the elements of an array into a single string. It takes an optional parameter that specifies the separator to use between the elements.
 
 // Syntax of join()
@@ -817,8 +815,7 @@ const moreNumbers = Array.from('hi!');
 
 // You said:
 // split
-// ChatGPT said:
-// ChatGPT
+
 // The split() method in JavaScript is used to split a string into an array of substrings, based on a specified separator. The split() method can take a string or a regular expression as the separator.
 
 // Syntax of split()
@@ -1031,8 +1028,7 @@ const moreNumbers = Array.from('hi!');
 
 
 // spread operator
-// ChatGPT said:
-// ChatGPT
+
 // The spread operator (...) in JavaScript is a powerful syntax that allows you to expand or "spread" elements of an iterable (like an array or object) into individual elements. It can be used in various contexts, such as copying, merging, and destructuring arrays or objects.
 
 // Syntax

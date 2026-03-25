@@ -1,6 +1,6 @@
 // ! Debouncing
 // Debouncing is a programming technique used to limit how often a function gets executed, especially in response to events that can happen frequently or rapidly, like:
-// Typing in a search box (input event)
+//? Typing in a search box (input event)
 // Window resizing
 // Button clicking
 // Scrolling

@@ -20,16 +20,14 @@
 
 // Map has a size property that returns the number of key-value pairs stored in the map.
 // Syntax of a Map
-// javascript
-// Copy code
+
 // let myMap = new Map([iterable]);
 // iterable (optional): An iterable object (such as an array of key-value pairs) that you want to add to the map.
 // Basic Operations with a Map
 // 1. Creating a Map
 // You can create a Map by passing an iterable (array of key-value pairs) to the constructor:
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25],
@@ -43,8 +41,7 @@
 // 2. Adding Elements to a Map
 // You can use the set() method to add or update elements in a Map.
 
-// javascript
-// Copy code
+
 // const myMap = new Map();
 // myMap.set('name', 'Alice');
 // myMap.set('age', 25);
@@ -55,8 +52,7 @@
 // 3. Accessing Values from a Map
 // To access the value associated with a particular key, use the get() method.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -68,8 +64,7 @@
 // 4. Checking if a Key Exists in a Map
 // You can use the has() method to check if a specific key exists in a Map.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -80,8 +75,7 @@
 // 5. Removing Elements from a Map
 // You can remove a specific key-value pair using the delete() method.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -93,8 +87,7 @@
 // 6. Clearing a Map
 // You can remove all key-value pairs from a Map using the clear() method.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -105,8 +98,7 @@
 // 7. Getting the Size of a Map
 // You can use the size property to get the number of key-value pairs in a Map.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -117,8 +109,7 @@
 // 1. Using forEach()
 // You can iterate over the entries of a Map using the forEach() method.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25],
@@ -137,8 +128,7 @@
 // You can use a for...of loop to iterate over the entries, keys, or values of a Map.
 
 // Iterating over Entries (key-value pairs):
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25],
@@ -154,8 +144,7 @@
 // // age 25
 // // city New York
 // Iterating over Keys:
-// javascript
-// Copy code
+
 // for (let key of myMap.keys()) {
 //   console.log(key);
 // }
@@ -164,8 +153,7 @@
 // // age
 // // city
 // Iterating over Values:
-// javascript
-// Copy code
+
 // for (let value of myMap.values()) {
 //   console.log(value);
 // }
@@ -176,8 +164,7 @@
 // 3. Using entries() Method
 // The entries() method returns an iterator object containing the key-value pairs in a Map.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -190,8 +177,7 @@
 // 1. Converting a Map to an Array
 // You can use the Array.from() method or the spread operator to convert a Map to an array of entries.
 
-// javascript
-// Copy code
+
 // const myMap = new Map([
 //   ['name', 'Alice'],
 //   ['age', 25]
@@ -202,32 +188,28 @@
 // // Output: [ [ 'name', 'Alice' ], [ 'age', 25 ] ]
 // Or:
 
-// javascript
-// Copy code
+
 // const arr = [...myMap];
 // console.log(arr);
 // // Output: [ [ 'name', 'Alice' ], [ 'age', 25 ] ]
 // 2. Converting an Array to a Map
 // You can convert an array of key-value pairs to a Map using the Map constructor.
 
-// javascript
-// Copy code
+
 // const arr = [['name', 'Alice'], ['age', 25]];
 // const myMap = new Map(arr);
 // console.log(myMap);
 // // Output: Map { 'name' => 'Alice', 'age' => 25 }
 // Example Use Cases for Map
 // Example 1: Storing User Data
-// javascript
-// Copy code
+
 // const userMap = new Map();
 // userMap.set('user1', { name: 'Alice', age: 25 });
 // userMap.set('user2', { name: 'Bob', age: 30 });
 
 // console.log(userMap.get('user1')); // Output: { name: 'Alice', age: 25 }
 // Example 2: Counting Occurrences
-// javascript
-// Copy code
+
 // const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'];
 // const wordCount = new Map();
 
@@ -275,16 +257,14 @@
 // has(key): Checks whether the WeakMap contains the given key.
 // delete(key): Removes the key-value pair from the WeakMap.
 // Syntax of a WeakMap
-// javascript
-// Copy code
+
 // let weakMap = new WeakMap([iterable]);
 // iterable (optional): An array of key-value pairs (where the key is an object) that you want to add to the WeakMap.
 // Basic Operations with a WeakMap
 // 1. Creating a WeakMap
 // You can create a WeakMap by passing an iterable (array of key-value pairs) to the constructor, where the keys must be objects.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice' };
 // const obj2 = { name: 'Bob' };
 
@@ -295,8 +275,7 @@
 // 2. Adding Elements to a WeakMap
 // You can add key-value pairs to a WeakMap using the set() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice' };
 // const weakMap = new WeakMap();
 
@@ -305,8 +284,7 @@
 // 3. Accessing Values from a WeakMap
 // To access the value associated with a key, use the get() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice' };
 // const weakMap = new WeakMap();
 // weakMap.set(obj1, 'Developer');
@@ -315,8 +293,7 @@
 // 4. Checking if a Key Exists in a WeakMap
 // You can check if a particular key exists in the WeakMap using the has() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice' };
 // const obj2 = { name: 'Bob' };
 
@@ -328,8 +305,7 @@
 // 5. Removing Elements from a WeakMap
 // You can remove a key-value pair from a WeakMap using the delete() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice' };
 // const weakMap = new WeakMap();
 // weakMap.set(obj1, 'Developer');
@@ -347,8 +323,7 @@
 // Example 1: Storing Metadata for Objects
 // Suppose you have a collection of objects and want to associate metadata with each object. Using a WeakMap ensures that the metadata doesn't prevent the objects from being garbage collected when they are no longer needed.
 
-// javascript
-// Copy code
+
 // const object1 = { name: 'Alice' };
 // const object2 = { name: 'Bob' };
 
@@ -361,8 +336,7 @@
 // Example 2: Caching Data
 // You can use a WeakMap to cache data related to objects without preventing those objects from being garbage collected.
 
-// javascript
-// Copy code
+
 // const cache = new WeakMap();
 
 // function fetchData(obj) {
@@ -385,8 +359,7 @@
 // Example 3: Avoiding Memory Leaks in DOM Manipulation
 // In web development, you might need to associate data with DOM elements, but you don't want that data to prevent garbage collection when the DOM element is removed.
 
-// javascript
-// Copy code
+
 // const element = document.querySelector('#myElement');
 // const weakMap = new WeakMap();
 

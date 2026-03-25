@@ -4,8 +4,7 @@
 // 1. Object Literal Syntax
 // The simplest and most common way to create an object:
 
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Krutik",
 //   age: 25,
@@ -15,8 +14,7 @@
 // 2. Using new Object()
 // You can create an object using the Object constructor:
 
-// javascript
-// Copy code
+
 // const car = new Object();
 // car.make = "Toyota";
 // car.model = "Camry";
@@ -26,8 +24,7 @@
 // 3. Using Object.create()
 // This creates a new object with the specified prototype.
 
-// javascript
-// Copy code
+
 // const prototypeObject = {
 //   greet() {
 //     console.log("Hello!");
@@ -41,35 +38,30 @@
 
 // Dot Notation:
 
-// javascript
-// Copy code
+
 // console.log(person.name); // Output: Krutik
 // Bracket Notation (useful for dynamic keys or special characters):
 
-// javascript
-// Copy code
+
 // console.log(person["age"]); // Output: 25
 
 // const key = "profession";
 // console.log(person[key]); // Output: Developer
 // Adding, Modifying, and Deleting Properties
 // Add or Modify a Property
-// javascript
-// Copy code
+
 // person.location = "India"; // Adding a new property
 // person.age = 26; // Modifying an existing property
 
 // console.log(person);
 // Delete a Property
-// javascript
-// Copy code
+
 // delete person.profession;
 // console.log(person);
 // Methods in Objects
 // When a function is assigned as a property of an object, it is called a method.
 
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Krutik",
 //   greet: function () {
@@ -82,31 +74,26 @@
 // Iterating Over Objects
 // for...in Loop: Iterates over the keys of an object.
 
-// javascript
-// Copy code
+
 // for (let key in person) {
 //   console.log(key, person[key]);
 // }
 // Object.keys(): Returns an array of the object's keys.
 
-// javascript
-// Copy code
+
 // console.log(Object.keys(person)); // ['name', 'greet']
 // Object.values(): Returns an array of the object's values.
 
-// javascript
-// Copy code
+
 // console.log(Object.values(person)); // ['Krutik', ƒ greet()]
 // Object.entries(): Returns an array of key-value pairs.
 
-// javascript
-// Copy code
+
 // console.log(Object.entries(person)); // [['name', 'Krutik'], ['greet', ƒ]]
 // Nested Objects
 // Objects can contain other objects.
 
-// javascript
-// Copy code
+
 // const student = {
 //   name: "John",
 //   subjects: {
@@ -119,8 +106,7 @@
 // Object Methods
 // Object.assign(): Copies properties from one object to another.
 
-// javascript
-// Copy code
+
 // const target = { a: 1 };
 // const source = { b: 2 };
 
@@ -128,8 +114,7 @@
 // console.log(target); // { a: 1, b: 2 }
 // Object.freeze(): Prevents modification of properties.
 
-// javascript
-// Copy code
+
 // const obj = { a: 1 };
 // Object.freeze(obj);
 
@@ -137,8 +122,7 @@
 // console.log(obj.a); // Output: 1
 // Object.seal(): Allows modification of existing properties but prevents adding or deleting properties.
 
-// javascript
-// Copy code
+
 // const obj = { a: 1 };
 // Object.seal(obj);
 
@@ -150,8 +134,7 @@
 // 1. this Context
 // The this keyword refers to the object it is used within.
 
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Krutik",
 //   greet() {
@@ -161,8 +144,7 @@
 
 // person.greet(); // Output: Krutik
 // 2. Constructor Function (to create multiple similar objects)
-// javascript
-// Copy code
+
 // function Person(name, age) {
 //   this.name = name;
 //   this.age = age;

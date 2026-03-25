@@ -4,8 +4,7 @@
 // window: The window object represents the global object in a browser environment. It serves as the container for all globally available variables, functions, and objects in a browser context (like alert, document, etc.).
 // DEFAULT_VALUE: This seems to be a placeholder or an example of a global variable. You can define DEFAULT_VALUE as a property of the window object to store a global constant or configuration value in the browser.
 // Example:
-// javascript
-// Copy code
+
 // // Defining a global constant in the window object
 // window.DEFAULT_VALUE = 42;
 
@@ -24,8 +23,7 @@
 // With globalThis, you can reference the global object in a unified way across environments.
 
 // Example:
-// javascript
-// Copy code
+
 // // Setting a global variable using globalThis
 // globalThis.DEFAULT_VALUE = 100;
 

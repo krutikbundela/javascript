@@ -1,8 +1,7 @@
 // The getElementsByTagName method in JavaScript is used to select all elements in the DOM with a specific tag name. It returns a live HTMLCollection of matching elements.
 
 // Syntax
-// javascript
-// Copy code
+
 // let elements = document.getElementsByTagName(tagName);
 // Parameters:
 // tagName: A string representing the name of the tag you want to select (e.g., 'div', 'p', 'span', etc.).
@@ -21,13 +20,12 @@
 // 1. Select Elements by Tag Name
 // HTML:
 // html
-// Copy code
+
 // <div>Div 1</div>
 // <div>Div 2</div>
 // <div>Div 3</div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const divs = document.getElementsByTagName('div');
 // console.log(divs); // Outputs an HTMLCollection of all <div> elements
 // 2. Access Elements from the HTMLCollection
@@ -35,13 +33,12 @@
 
 // HTML:
 // html
-// Copy code
+
 // <p>Paragraph 1</p>
 // <p>Paragraph 2</p>
 // <p>Paragraph 3</p>
 // JavaScript:
-// javascript
-// Copy code
+
 // const paragraphs = document.getElementsByTagName('p');
 
 // // Access by index
@@ -54,25 +51,23 @@
 // 3. Select All Elements in the DOM
 // HTML:
 // html
-// Copy code
+
 // <div>Div Element</div>
 // <p>Paragraph Element</p>
 // <span>Span Element</span>
 // JavaScript:
-// javascript
-// Copy code
+
 // const allElements = document.getElementsByTagName('*');
 // console.log(allElements); // Outputs an HTMLCollection of all elements
 // 4. Modify Matching Elements
 // HTML:
 // html
-// Copy code
+
 // <li>Item 1</li>
 // <li>Item 2</li>
 // <li>Item 3</li>
 // JavaScript:
-// javascript
-// Copy code
+
 // const listItems = document.getElementsByTagName('li');
 
 // // Change the text content of each <li> element
@@ -84,14 +79,13 @@
 
 // HTML:
 // html
-// Copy code
+
 // <ul id="list">
 //   <li>List Item 1</li>
 // </ul>
 // <button id="addItem">Add Item</button>
 // JavaScript:
-// javascript
-// Copy code
+
 // const listItems = document.getElementsByTagName('li');
 // const button = document.getElementById('addItem');
 
@@ -119,7 +113,7 @@
 // Real-World Example
 // HTML:
 // html
-// Copy code
+
 // <!DOCTYPE html>
 // <html>
 // <head>
@@ -133,8 +127,7 @@
 // </body>
 // </html>
 // JavaScript:
-// javascript
-// Copy code
+
 // const paragraphs = document.getElementsByTagName('p');
 // const button = document.getElementById('update');
 

@@ -108,8 +108,7 @@ anotherWay();
 // The bind() method in JavaScript is used to create a new function with a specific value of this and, optionally, pre-defined arguments. It is particularly useful for controlling the this context of a function, especially in scenarios where the this value might otherwise change dynamically.
 
 // Syntax
-// javascript
-// Copy code
+
 // function.bind(thisArg, ...args);
 // thisArg: The value to be used as this when the new function is invoked.
 // args (optional): Arguments to pre-set for the function (also called partial application).
@@ -120,8 +119,7 @@ anotherWay();
 // The bind() method ensures that a specific this value is always used, regardless of how the function is called.
 
 // Example: Without bind()
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Alice",
 //   greet() {
@@ -132,8 +130,7 @@ anotherWay();
 // const greet = person.greet; // Function reference
 // greet(); // Output: "Hello, my name is undefined" (because `this` is not bound)
 // Example: With bind()
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Alice",
 //   greet() {
@@ -147,8 +144,7 @@ anotherWay();
 // bind() can also pre-set arguments for a function.
 
 // Example: Pre-Setting Arguments
-// javascript
-// Copy code
+
 // function multiply(a, b) {
 //   return a * b;
 // }
@@ -162,8 +158,7 @@ anotherWay();
 // In event listeners, this typically refers to the element that triggered the event. Use bind() to ensure this refers to a specific object.
 
 // Example: Fixing this in Event Handlers
-// javascript
-// Copy code
+
 // class Button {
 //   constructor(label) {
 //     this.label = label;
@@ -197,8 +192,7 @@ anotherWay();
 // call()	Call a function with a specific this context.	Immediately invoked.	Passed as individual arguments.
 // apply()	Call a function with a specific this context.	Immediately invoked.	Passed as an array of arguments.
 // Example
-// javascript
-// Copy code
+
 // function greet(greeting, punctuation) {
 //   console.log(`${greeting}, my name is ${this.name}${punctuation}`);
 // }
@@ -216,8 +210,7 @@ anotherWay();
 // greet.apply(person, ["Hey", "!"]); // Output: "Hey, my name is Alice!"
 // Common Use Cases
 // 1. Fixing this in a Method
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Alice",
 //   greet() {
@@ -228,8 +221,7 @@ anotherWay();
 // const greet = person.greet.bind(person);
 // setTimeout(greet, 1000); // Output: "Hi, Alice"
 // 2. Partial Application
-// javascript
-// Copy code
+
 // function subtract(a, b) {
 //   return a - b;
 // }
@@ -237,8 +229,7 @@ anotherWay();
 // const subtractFive = subtract.bind(null, 5);
 // console.log(subtractFive(10)); // Output: -5 (5 - 10)
 // 3. Reusable Event Handlers
-// javascript
-// Copy code
+
 // class App {
 //   constructor(name) {
 //     this.name = name;
@@ -269,16 +260,14 @@ anotherWay();
 // The call() method in JavaScript is used to invoke a function with a specific this value and arguments provided individually. It allows you to explicitly set the this context for a function, which is useful when you want to control the execution context, especially in situations like callbacks or event handling.
 
 // Syntax of call()
-// javascript
-// Copy code
+
 // function.call(thisArg, arg1, arg2, ...);
 // thisArg: The value to be used as this when the function is invoked.
 // arg1, arg2, ...: The arguments to be passed to the function (individual arguments, not an array).
 // How call() Works
 // The call() method calls the function immediately and allows you to specify the value of this (the context of the function) and pass arguments one by one.
 // Example 1: Using call() to Set this
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Alice",
 //   greet() {
@@ -297,8 +286,7 @@ anotherWay();
 // person.greet.call(person2) calls the greet method from person but sets this to person2.
 // So, this.name refers to person2.name, and the output is "Hello, my name is Bob".
 // Example 2: Passing Arguments with call()
-// javascript
-// Copy code
+
 // function introduce(city, country) {
 //   console.log(`${this.name} is from ${city}, ${country}.`);
 // }
@@ -316,8 +304,7 @@ anotherWay();
 // Example 3: Borrowing Methods from Other Objects
 // You can use call() to borrow methods from other objects and apply them to different objects.
 
-// javascript
-// Copy code
+
 // const car = {
 //   make: "Toyota",
 //   model: "Corolla",
@@ -338,8 +325,7 @@ anotherWay();
 // Example 4: Using call() with Functions in Constructor
 // You can use call() within constructors to share functionality between different objects.
 
-// javascript
-// Copy code
+
 // function Animal(name, sound) {
 //   this.name = name;
 //   this.sound = sound;
@@ -361,8 +347,7 @@ anotherWay();
 // apply()	Invoke a function with a specific this context.	Immediately invoked.	Arguments are passed as an array.
 // bind()	Create a new function with a specific this context.	Not invoked immediately.	Arguments can be pre-set and passed later.
 // Example: call() vs apply()
-// javascript
-// Copy code
+
 // function greet(greeting, punctuation) {
 //   console.log(`${greeting}, my name is ${this.name}${punctuation}`);
 // }
@@ -404,8 +389,7 @@ anotherWay();
 // The apply() method in JavaScript is very similar to the call() method. It is used to invoke a function with a specific this value, but the main difference lies in how arguments are passed to the function. While call() takes arguments individually, apply() takes the arguments as an array or array-like object.
 
 // Syntax of apply()
-// javascript
-// Copy code
+
 // function.apply(thisArg, [arg1, arg2, ...]);
 // thisArg: The value to be used as this when the function is invoked.
 // [arg1, arg2, ...]: An array or array-like object containing the arguments to pass to the function.
@@ -413,8 +397,7 @@ anotherWay();
 // The apply() method calls the function immediately with the provided this context and arguments. The difference between apply() and call() is that apply() accepts the arguments as an array, while call() takes the arguments individually.
 
 // Example 1: Using apply() to Set this
-// javascript
-// Copy code
+
 // const person = {
 //   name: "Alice",
 //   greet() {
@@ -431,8 +414,7 @@ anotherWay();
 // Here, person.greet.apply(person2) calls the greet method from person, but this is set to person2. This results in the output "Hello, my name is Bob".
 
 // Example 2: Passing Arguments with apply()
-// javascript
-// Copy code
+
 // function introduce(city, country) {
 //   console.log(`${this.name} is from ${city}, ${country}.`);
 // }
@@ -449,8 +431,7 @@ anotherWay();
 // Example 3: Using apply() with Math Methods
 // The apply() method is commonly used with built-in methods such as Math.max() and Math.min(), which require individual arguments. Since these methods don’t accept an array directly, apply() is a great way to pass an array of values to them.
 
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4, 5];
 
 // // Using `apply()` to pass an array to Math.max()
@@ -467,8 +448,7 @@ anotherWay();
 // Example 4: Borrowing Methods with apply()
 // Just like call(), apply() can also be used to borrow methods from other objects.
 
-// javascript
-// Copy code
+
 // const car = {
 //   make: "Toyota",
 //   model: "Corolla",
@@ -489,8 +469,7 @@ anotherWay();
 // Example 5: Using apply() with a Constructor
 // You can use apply() to invoke a constructor function with specific arguments, especially when you're working with inheritance.
 
-// javascript
-// Copy code
+
 // function Animal(name, sound) {
 //   this.name = name;
 //   this.sound = sound;
@@ -512,8 +491,7 @@ anotherWay();
 // apply()	Invoke a function with a specific this context.	Immediately invoked.	Arguments passed as an array.
 // bind()	Create a new function with a specific this context.	Not invoked immediately.	Arguments can be pre-set and passed later.
 // Example: call() vs apply()
-// javascript
-// Copy code
+
 // function greet(greeting, punctuation) {
 //   console.log(`${greeting}, my name is ${this.name}${punctuation}`);
 // }

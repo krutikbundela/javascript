@@ -1,8 +1,7 @@
 // The getAttribute() method in JavaScript is used to retrieve the value of a specified attribute from an HTML element. If the attribute exists, it returns the value as a string; if the attribute doesn't exist, it returns null.
 
 // Syntax
-// javascript
-// Copy code
+
 // let attributeValue = element.getAttribute(attributeName);
 // Parameters:
 // attributeName: A string representing the name of the attribute whose value you want to retrieve.
@@ -13,43 +12,39 @@
 // 1. Retrieve an Existing Attribute
 // HTML:
 // html
-// Copy code
+
 // <img id="logo" src="logo.png" alt="Website Logo">
 // JavaScript:
-// javascript
-// Copy code
+
 // const image = document.getElementById('logo');
 // console.log(image.getAttribute('src')); // Outputs: "logo.png"
 // console.log(image.getAttribute('alt')); // Outputs: "Website Logo"
 // 2. Handle Non-Existent Attributes
 // HTML:
 // html
-// Copy code
+
 // <button id="submitButton">Submit</button>
 // JavaScript:
-// javascript
-// Copy code
+
 // const button = document.getElementById('submitButton');
 // console.log(button.getAttribute('disabled')); // Outputs: null (attribute does not exist)
 // 3. Retrieve Custom Attributes
 // HTML:
 // html
-// Copy code
+
 // <div id="product" data-id="12345" data-category="electronics"></div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const product = document.getElementById('product');
 // console.log(product.getAttribute('data-id'));        // Outputs: "12345"
 // console.log(product.getAttribute('data-category')); // Outputs: "electronics"
 // 4. Dynamic Retrieval
 // HTML:
 // html
-// Copy code
+
 // <a id="myLink" href="https://example.com" target="_blank">Click Here</a>
 // JavaScript:
-// javascript
-// Copy code
+
 // const link = document.getElementById('myLink');
 
 // // Check current attribute values
@@ -80,11 +75,10 @@
 // Example Comparison:
 // HTML:
 // html
-// Copy code
+
 // <input type="checkbox" id="accept" checked>
 // JavaScript:
-// javascript
-// Copy code
+
 // const checkbox = document.getElementById('accept');
 
 // // Using getAttribute()
@@ -96,11 +90,10 @@
 // Example: Retrieve and Use Data Attributes
 // HTML:
 // html
-// Copy code
+
 // <div class="product" data-id="001" data-name="Laptop"></div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const product = document.querySelector('.product');
 
 // // Fetch custom attributes

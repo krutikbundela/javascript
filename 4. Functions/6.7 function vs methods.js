@@ -12,8 +12,7 @@
 // May accept arguments and return a value.
 // Not inherently associated with any object.
 // Examples
-// javascript
-// Copy code
+
 // // Regular Function
 // function greet(name) {
 //   return `Hello, ${name}!`;
@@ -31,8 +30,7 @@
 // Called with the object it is associated with.
 // The this keyword inside a method refers to the object the method belongs to.
 // Examples
-// javascript
-// Copy code
+
 // // Method in an Object
 // const person = {
 //   name: "Alice",
@@ -58,8 +56,7 @@
 // this Context	Not tied to any specific this unless explicitly bound.	Refers to the object or class they belong to.
 // Usage	General-purpose code reuse.	Operations and behaviors specific to objects.
 // Example: Function vs Method
-// javascript
-// Copy code
+
 // // Function (Standalone)
 // function add(a, b) {
 //   return a + b;
@@ -86,8 +83,7 @@
 // A function can behave like a method if you assign it to an object.
 
 // Example:
-// javascript
-// Copy code
+
 // function sayHello() {
 //   return `Hello, ${this.name}!`;
 // }

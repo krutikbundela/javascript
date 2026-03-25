@@ -4,8 +4,7 @@
 // How Tagged Templates Work
 // The syntax for a tagged template is:
 
-// javascript
-// Copy code
+
 // tag`Template Literal`;
 // Here:
 
@@ -17,8 +16,7 @@
 // An array of literal strings (the static parts of the template literal).
 // The values of the expressions (the interpolated variables).
 // Basic Example
-// javascript
-// Copy code
+
 // function myTag(strings, ...values) {
 //   console.log('Strings:', strings);
 //   console.log('Values:', values);
@@ -47,8 +45,7 @@
 // 1. Formatting a String
 // You can use tagged templates to dynamically format output:
 
-// javascript
-// Copy code
+
 // function formatCurrency(strings, ...values) {
 //   return strings.reduce((result, str, i) => {
 //     const value = values[i] ? `$${values[i].toFixed(2)}` : '';
@@ -64,8 +61,7 @@
 // 2. Escaping HTML
 // Tagged templates can be used to escape potentially unsafe HTML:
 
-// javascript
-// Copy code
+
 // function escapeHTML(strings, ...values) {
 //   const escape = str =>
 //     str
@@ -88,8 +84,7 @@
 // 3. Localization
 // Tagged templates can simplify localization by processing strings dynamically:
 
-// javascript
-// Copy code
+
 // function i18n(strings, ...values) {
 //   const translations = {
 //     'Hello, ': 'Hola, ',
@@ -112,8 +107,7 @@
 // The built-in String.raw is a predefined tag function that processes template literals by preserving raw escape sequences (e.g., \n, \t).
 
 // Example
-// javascript
-// Copy code
+
 // const rawString = String.raw`This is a raw string with \n no new line`;
 // console.log(rawString);
 // // Outputs: "This is a raw string with \n no new line"

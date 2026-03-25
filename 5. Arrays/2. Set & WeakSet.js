@@ -17,55 +17,48 @@
 
 // A Set is iterable, meaning you can loop through its values using methods like forEach(), for...of loop, or the values() method.
 // Syntax of a Set
-// javascript
-// Copy code
+
 // let mySet = new Set([iterable]);
 // iterable (optional): An array or another iterable object whose elements you want to add to the Set.
 // Basic Operations with a Set
 // 1. Creating a Set
 // You can create a Set by passing an iterable (such as an array) to the constructor.
 
-// javascript
-// Copy code
+
 // const numbers = new Set([1, 2, 3, 4, 5]);
 // console.log(numbers); // Output: Set { 1, 2, 3, 4, 5 }
 // In this example, the Set contains numbers from 1 to 5.
 // 2. Adding Elements to a Set
 // You can use the add() method to add elements to a Set.
 
-// javascript
-// Copy code
+
 // const mySet = new Set();
 // mySet.add(1);
 // mySet.add(2);
 // mySet.add(3);
 // console.log(mySet); // Output: Set { 1, 2, 3 }
 // Adding a duplicate element will have no effect, as Set only allows unique values:
-// javascript
-// Copy code
+
 // mySet.add(2); 
 // console.log(mySet); // Output: Set { 1, 2, 3 }
 // 3. Checking the Size of a Set
 // You can use the size property to get the number of unique elements in the Set.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 3, 4]);
 // console.log(mySet.size); // Output: 4
 // The duplicate 3 is ignored, and the size of the set is 4.
 // 4. Checking if a Set Contains a Value
 // The has() method checks whether a specific value exists in the Set.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 // console.log(mySet.has(2)); // Output: true
 // console.log(mySet.has(5)); // Output: false
 // 5. Removing Elements from a Set
 // You can remove an element from a Set using the delete() method.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 // mySet.delete(3);
 // console.log(mySet); // Output: Set { 1, 2, 4 }
@@ -73,8 +66,7 @@
 // 6. Clearing a Set
 // The clear() method removes all elements from the Set.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 // mySet.clear();
 // console.log(mySet); // Output: Set {}
@@ -83,8 +75,7 @@
 // You can iterate over a Set using several methods:
 
 // 1. Using forEach()
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 
 // mySet.forEach(value => {
@@ -96,8 +87,7 @@
 // // 3
 // // 4
 // 2. Using for...of Loop
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 
 // for (let value of mySet) {
@@ -111,8 +101,7 @@
 // 3. Using values() Method
 // The values() method returns an iterator object containing the values of the Set.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 // const iterator = mySet.values();
 
@@ -130,29 +119,25 @@
 // 1. Converting a Set to an Array
 // You can use the Array.from() method or the spread operator to convert a Set to an array.
 
-// javascript
-// Copy code
+
 // const mySet = new Set([1, 2, 3, 4]);
 // const arr = Array.from(mySet);
 // console.log(arr); // Output: [1, 2, 3, 4]
 // Or:
 
-// javascript
-// Copy code
+
 // const arr = [...mySet];
 // console.log(arr); // Output: [1, 2, 3, 4]
 // 2. Converting an Array to a Set
 // You can convert an array to a Set to remove duplicate elements.
 
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3, 3, 4];
 // const mySet = new Set(arr);
 // console.log(mySet); // Output: Set { 1, 2, 3, 4 }
 // Examples
 // Example 1: Removing Duplicates from an Array
-// javascript
-// Copy code
+
 // const arr = [1, 2, 2, 3, 4, 4, 5];
 // const uniqueSet = new Set(arr);
 // console.log(uniqueSet); // Output: Set { 1, 2, 3, 4, 5 }
@@ -161,21 +146,18 @@
 // While Set does not directly support set operations like union, intersection, or difference, you can implement them manually using methods like add(), has(), and loops.
 
 // Union:
-// javascript
-// Copy code
+
 // const setA = new Set([1, 2, 3]);
 // const setB = new Set([3, 4, 5]);
 
 // const union = new Set([...setA, ...setB]);
 // console.log(union); // Output: Set { 1, 2, 3, 4, 5 }
 // Intersection:
-// javascript
-// Copy code
+
 // const intersection = new Set([...setA].filter(x => setB.has(x)));
 // console.log(intersection); // Output: Set { 3 }
 // Difference:
-// javascript
-// Copy code
+
 // const difference = new Set([...setA].filter(x => !setB.has(x)));
 // console.log(difference); // Output: Set { 1, 2 }
 // Key Points About Set
@@ -220,16 +202,14 @@
 // has(value): Checks if an object is in the WeakSet.
 // delete(value): Removes an object from the WeakSet.
 // Syntax of a WeakSet
-// javascript
-// Copy code
+
 // let weakSet = new WeakSet([iterable]);
 // iterable (optional): An array or another iterable object whose objects you want to add to the WeakSet. Only objects can be added.
 // Basic Operations with a WeakSet
 // 1. Creating a WeakSet
 // You can create a WeakSet by passing an iterable (such as an array of objects) to the constructor.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: "Alice" };
 // const obj2 = { name: "Bob" };
 // const weakSet = new WeakSet([obj1, obj2]);
@@ -242,8 +222,7 @@
 // 2. Adding an Object to a WeakSet
 // You can add an object to a WeakSet using the add() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: "Alice" };
 // const weakSet = new WeakSet();
 // weakSet.add(obj1);
@@ -252,8 +231,7 @@
 // 3. Checking if an Object Exists in a WeakSet
 // You can check if an object is in a WeakSet using the has() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: "Alice" };
 // const obj2 = { name: "Bob" };
 // const weakSet = new WeakSet([obj1]);
@@ -263,8 +241,7 @@
 // 4. Removing an Object from a WeakSet
 // You can remove an object from a WeakSet using the delete() method.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: "Alice" };
 // const weakSet = new WeakSet([obj1]);
 
@@ -280,8 +257,7 @@
 // Example: WeakSet and Garbage Collection
 // Because WeakSet uses weak references, objects stored in a WeakSet can be garbage collected when there are no other references to them.
 
-// javascript
-// Copy code
+
 // let obj1 = { name: "Alice" };
 // let weakSet = new WeakSet([obj1]);
 

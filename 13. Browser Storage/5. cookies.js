@@ -10,29 +10,25 @@
 // 1. Setting a Cookie
 // You can set cookies using document.cookie.
 
-// javascript
-// Copy code
+
 // // Create a cookie
 // document.cookie = "username=JohnDoe";
 // console.log("Cookie set!");
 // To set additional attributes like expiration, path, or domain:
 
-// javascript
-// Copy code
+
 // // Set a cookie with attributes
 // document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 23:59:59 GMT; path=/";
 // 2. Getting Cookies
 // The document.cookie property returns all cookies as a single string.
 
-// javascript
-// Copy code
+
 // // Get all cookies
 // console.log(document.cookie);
 // // Output: "username=JohnDoe; theme=dark"
 // To retrieve a specific cookie, you can parse the string:
 
-// javascript
-// Copy code
+
 // function getCookie(name) {
 //   const cookieArr = document.cookie.split("; ");
 //   for (let cookie of cookieArr) {
@@ -49,16 +45,14 @@
 // 3. Updating a Cookie
 // To update a cookie, set it again with the same name but different value or attributes.
 
-// javascript
-// Copy code
+
 // // Update a cookie
 // document.cookie = "username=JaneDoe; path=/";
 // console.log("Cookie updated!");
 // 4. Deleting a Cookie
 // To delete a cookie, set its expiration date in the past.
 
-// javascript
-// Copy code
+
 // // Delete a cookie
 // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 // console.log("Cookie deleted!");
@@ -81,8 +75,7 @@
 // SameSite=Lax: Cookie sent for same-site and some cross-site requests (e.g., top-level navigation).
 // SameSite=None; Secure: Cookie sent for all requests but must be over HTTPS.
 // Example: Storing and Retrieving a Cookie
-// javascript
-// Copy code
+
 // // Set a cookie
 // document.cookie = "theme=dark; max-age=3600; path=/";
 

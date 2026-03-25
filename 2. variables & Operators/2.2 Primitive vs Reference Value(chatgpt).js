@@ -18,8 +18,7 @@
 // symbol
 // bigint
 // Examples of Primitive Values
-// javascript
-// Copy code
+
 // let x = 10;     // Number
 // let y = "Hi";   // String
 // let isTrue = true; // Boolean
@@ -28,8 +27,7 @@
 // let sym = Symbol("id"); // Symbol
 // let bigNum = 12345678901234567890n; // BigInt
 // Immutable Behavior
-// javascript
-// Copy code
+
 // let a = "Hello";
 // a[0] = "h"; // Strings are immutable
 // console.log(a); // Output: "Hello" (unchanged)
@@ -50,16 +48,14 @@
 // Array
 // Function
 // Examples of Reference Values
-// javascript
-// Copy code
+
 // let obj = { name: "Alice" }; // Object
 // let arr = [1, 2, 3];         // Array
 // let func = function () {     // Function
 //   console.log("Hello");
 // };
 // Mutable Behavior
-// javascript
-// Copy code
+
 // let person = { name: "John" };
 // let anotherPerson = person; // Copying the reference, not the value
 
@@ -75,8 +71,7 @@
 // Examples	string, number, boolean, etc.	Object, Array, Function, etc.
 // Example: Assignment Behavior
 // Primitive Values:
-// javascript
-// Copy code
+
 // let a = 5;
 // let b = a; // Copies the value of 'a' into 'b'
 // b = 10;
@@ -84,8 +79,7 @@
 // console.log(a); // 5 (unchanged)
 // console.log(b); // 10
 // Reference Values:
-// javascript
-// Copy code
+
 // let obj1 = { value: 5 };
 // let obj2 = obj1; // Copies the reference to 'obj1'
 
@@ -95,15 +89,13 @@
 // console.log(obj2.value); // 10
 // Example: Comparison Behavior
 // Primitive Values:
-// javascript
-// Copy code
+
 // let x = 10;
 // let y = 10;
 
 // console.log(x === y); // true (same value)
 // Reference Values:
-// javascript
-// Copy code
+
 // let obj1 = { value: 10 };
 // let obj2 = { value: 10 };
 
@@ -114,8 +106,7 @@
 // Shallow Copy
 // A shallow copy copies only the first level of properties. Changes to nested objects affect the original.
 
-// javascript
-// Copy code
+
 // let original = { name: "John", details: { age: 30 } };
 // let copy = { ...original }; // Shallow copy using spread operator
 
@@ -126,8 +117,7 @@
 // Deep Copy
 // A deep copy creates an entirely new object with all nested objects copied.
 
-// javascript
-// Copy code
+
 // let original = { name: "John", details: { age: 30 } };
 // let deepCopy = JSON.parse(JSON.stringify(original)); // Deep copy
 

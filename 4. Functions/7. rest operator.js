@@ -13,8 +13,7 @@
 // The rest operator collects all additional arguments into an array when used in function definitions.
 
 // Example: Collecting Arguments
-// javascript
-// Copy code
+
 // function sum(...numbers) {
 //   return numbers.reduce((total, num) => total + num, 0);
 // }
@@ -27,8 +26,7 @@
 // When destructuring arrays, the rest operator collects the remaining elements into a new array.
 
 // Example: Collecting Remaining Elements
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4, 5];
 // const [first, second, ...rest] = numbers;
 
@@ -41,8 +39,7 @@
 // When destructuring objects, the rest operator collects the remaining properties into a new object.
 
 // Example: Collecting Remaining Properties
-// javascript
-// Copy code
+
 // const person = { name: "Alice", age: 25, city: "New York" };
 // const { name, ...details } = person;
 
@@ -58,8 +55,7 @@
 // Common Use Cases	Function parameters, destructuring	Combining arrays, cloning objects
 // Examples	function(...args), [a, ...rest]	[...array1, ...array2], {...obj}
 // Example: Rest vs Spread
-// javascript
-// Copy code
+
 // // Rest Operator (Collects)
 // const [a, ...rest] = [1, 2, 3, 4];
 // console.log(rest); // Output: [2, 3, 4]
@@ -70,24 +66,21 @@
 // console.log(newArray); // Output: [1, 2, 3, 4, 5]
 // Practical Applications
 // 1. Handling Variable-Length Arguments
-// javascript
-// Copy code
+
 // function concatenateStrings(...strings) {
 //   return strings.join(" ");
 // }
 
 // console.log(concatenateStrings("Hello", "World", "!")); // Output: "Hello World !"
 // 2. Skipping Elements in Destructuring
-// javascript
-// Copy code
+
 // const colors = ["red", "green", "blue", "yellow"];
 // const [primary, , ...secondary] = colors;
 
 // console.log(primary);   // Output: red
 // console.log(secondary); // Output: ["blue", "yellow"]
 // 3. Copying or Cloning Arrays and Objects
-// javascript
-// Copy code
+
 // const originalArray = [1, 2, 3];
 // const cloneArray = [...originalArray];
 
@@ -95,8 +88,7 @@
 // Limitations of the Rest Operator
 // Only one rest parameter per function: It must be the last parameter.
 
-// javascript
-// Copy code
+
 // function invalidFunction(a, ...rest, b) {
 //   // SyntaxError: Rest parameter must be last formal parameter
 // }

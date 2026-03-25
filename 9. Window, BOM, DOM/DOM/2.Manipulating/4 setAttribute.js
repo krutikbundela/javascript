@@ -1,8 +1,7 @@
 // The setAttribute() method in JavaScript is used to add a new attribute to an HTML element or modify the value of an existing attribute. It allows dynamic updates to element attributes like id, class, src, href, style, and custom attributes.
 
 // Syntax
-// javascript
-// Copy code
+
 // element.setAttribute(attributeName, attributeValue);
 // Parameters:
 // attributeName: The name of the attribute to add or update (e.g., 'class', 'id', 'src', etc.).
@@ -13,55 +12,50 @@
 // 1. Add a New Attribute
 // HTML:
 // html
-// Copy code
+
 // <img id="myImage" src="example.jpg" alt="Example Image">
 // JavaScript:
-// javascript
-// Copy code
+
 // const image = document.getElementById('myImage');
 // image.setAttribute('title', 'This is an image'); // Adds a "title" attribute
 // console.log(image); // <img id="myImage" src="example.jpg" alt="Example Image" title="This is an image">
 // 2. Modify an Existing Attribute
 // HTML:
 // html
-// Copy code
+
 // <a id="myLink" href="https://example.com">Visit Example</a>
 // JavaScript:
-// javascript
-// Copy code
+
 // const link = document.getElementById('myLink');
 // link.setAttribute('href', 'https://anotherexample.com'); // Updates the "href" attribute
 // console.log(link); // <a id="myLink" href="https://anotherexample.com">Visit Example</a>
 // 3. Add Custom Data Attributes
 // HTML:
 // html
-// Copy code
+
 // <div id="product"></div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const product = document.getElementById('product');
 // product.setAttribute('data-product-id', '12345'); // Adds a custom data attribute
 // console.log(product); // <div id="product" data-product-id="12345"></div>
 // 4. Set Inline Styles
 // HTML:
 // html
-// Copy code
+
 // <p id="text">Hello, World!</p>
 // JavaScript:
-// javascript
-// Copy code
+
 // const text = document.getElementById('text');
 // text.setAttribute('style', 'color: blue; font-size: 20px;'); // Sets inline styles
 // console.log(text); // <p id="text" style="color: blue; font-size: 20px;">Hello, World!</p>
 // 5. Dynamic Attribute Updates
 // HTML:
 // html
-// Copy code
+
 // <img id="dynamicImage" src="image1.jpg">
 // JavaScript:
-// javascript
-// Copy code
+
 // const image = document.getElementById('dynamicImage');
 // const toggleSrc = () => {
 //   const newSrc = image.getAttribute('src') === 'image1.jpg' ? 'image2.jpg' : 'image1.jpg';
@@ -101,11 +95,10 @@
 // Example: Toggling a Button's Disabled State
 // HTML:
 // html
-// Copy code
+
 // <button id="submitButton">Submit</button>
 // JavaScript:
-// javascript
-// Copy code
+
 // const button = document.getElementById('submitButton');
 
 // function toggleButtonState(disable) {

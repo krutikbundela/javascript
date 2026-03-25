@@ -175,8 +175,7 @@ Promise.race([promise1, promise2, promise3])
 // resolve: A function to call when the Promise is fulfilled.
 // reject: A function to call when the Promise is rejected.
 // Example: Basic Promise
-// javascript
-// Copy code
+
 // const myPromise = new Promise((resolve, reject) => {
 //   const success = true; // Simulate success or failure
 //   if (success) {
@@ -198,8 +197,7 @@ Promise.race([promise1, promise2, promise3])
 // You can chain multiple .then() calls to handle a sequence of asynchronous tasks.
 
 // Example: Promise Chaining
-// javascript
-// Copy code
+
 // const fetchData = () => {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => resolve('Data fetched'), 1000);
@@ -221,8 +219,7 @@ Promise.race([promise1, promise2, promise3])
 // Use .catch() to handle errors, and .finally() to execute cleanup code regardless of success or failure.
 
 // Example: Error Handling
-// javascript
-// Copy code
+
 // const fetchData = () => {
 //   return new Promise((resolve, reject) => {
 //     const error = true; // Simulate an error
@@ -248,8 +245,7 @@ Promise.race([promise1, promise2, promise3])
 // 1. Promise.all
 // Waits for all promises in an array to resolve. If one promise is rejected, the entire operation is rejected.
 
-// javascript
-// Copy code
+
 // const p1 = Promise.resolve(10);
 // const p2 = Promise.resolve(20);
 // const p3 = Promise.resolve(30);
@@ -264,8 +260,7 @@ Promise.race([promise1, promise2, promise3])
 // 2. Promise.race
 // Returns the result of the first promise to settle (either fulfilled or rejected).
 
-// javascript
-// Copy code
+
 // const p1 = new Promise(resolve => setTimeout(() => resolve('First'), 1000));
 // const p2 = new Promise(resolve => setTimeout(() => resolve('Second'), 2000));
 
@@ -276,8 +271,7 @@ Promise.race([promise1, promise2, promise3])
 // 3. Promise.any
 // Returns the first fulfilled promise. If all are rejected, it throws an error.
 
-// javascript
-// Copy code
+
 // const p1 = Promise.reject('Error 1');
 // const p2 = Promise.resolve('Success 2');
 // const p3 = Promise.resolve('Success 3');
@@ -292,8 +286,7 @@ Promise.race([promise1, promise2, promise3])
 // 4. Promise.allSettled
 // Waits for all promises to settle (fulfilled or rejected) and returns an array of their outcomes.
 
-// javascript
-// Copy code
+
 // const p1 = Promise.resolve('Resolved');
 // const p2 = Promise.reject('Rejected');
 
@@ -309,8 +302,7 @@ Promise.race([promise1, promise2, promise3])
 // async/await provides a more readable way to work with Promises.
 
 // Example
-// javascript
-// Copy code
+
 // const fetchData = () => {
 //   return new Promise(resolve => {
 //     setTimeout(() => resolve('Data fetched'), 1000);

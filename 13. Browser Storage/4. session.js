@@ -15,33 +15,28 @@
 // length: A property that returns the number of items stored.
 // Usage Examples
 // 1. Storing Data
-// javascript
-// Copy code
+
 // // Add data to sessionStorage
 // sessionStorage.setItem('user', 'Alice');
 // sessionStorage.setItem('theme', 'light');
 // console.log('Data stored in sessionStorage.');
 // 2. Retrieving Data
-// javascript
-// Copy code
+
 // // Retrieve data from sessionStorage
 // const user = sessionStorage.getItem('user');
 // console.log(`Welcome, ${user}!`); // Output: Welcome, Alice!
 // 3. Removing Data
-// javascript
-// Copy code
+
 // // Remove specific item
 // sessionStorage.removeItem('user');
 // console.log('User removed from sessionStorage.');
 // 4. Clearing All Data
-// javascript
-// Copy code
+
 // // Clear all data
 // sessionStorage.clear();
 // console.log('All sessionStorage data cleared.');
 // 5. Iterating Over sessionStorage
-// javascript
-// Copy code
+
 // // Get all keys and values in sessionStorage
 // for (let i = 0; i < sessionStorage.length; i++) {
 //   const key = sessionStorage.key(i);
@@ -52,14 +47,12 @@
 // Like localStorage, sessionStorage only supports string values. Use JSON.stringify() and JSON.parse() for storing and retrieving objects.
 
 // Storing an Object:
-// javascript
-// Copy code
+
 // const sessionData = { name: 'Bob', preferences: { language: 'English' } };
 // sessionStorage.setItem('sessionData', JSON.stringify(sessionData));
 // console.log('Object stored in sessionStorage.');
 // Retrieving and Parsing an Object:
-// javascript
-// Copy code
+
 // const storedSessionData = JSON.parse(sessionStorage.getItem('sessionData'));
 // console.log(storedSessionData.name); // Output: Bob
 // console.log(storedSessionData.preferences.language); // Output: English
@@ -76,8 +69,7 @@
 // Limited Storage Size: Around 5MB, similar to localStorage.
 // Not Secure: Vulnerable to XSS attacks, so avoid storing sensitive information.
 // Example: Using sessionStorage in an Application
-// javascript
-// Copy code
+
 // // Save form data to sessionStorage
 // document.querySelector('#saveForm').addEventListener('click', () => {
 //   const name = document.querySelector('#name').value;

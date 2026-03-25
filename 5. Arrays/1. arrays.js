@@ -234,8 +234,7 @@ console.log(myForEachArr); // undefined
 // The slice() method in JavaScript is used to extract a shallow copy of a portion of an array or string without modifying the original. It can be used on both arrays and strings, and it returns a new array or string containing the extracted portion.
 
 // Syntax of slice()
-// javascript
-// Copy code
+
 // arr.slice(start, end);
 // start (optional): The index at which to begin extraction. If not provided, it defaults to 0.
 // end (optional): The index at which to stop extraction (but not including the element at this index). If not provided, it extracts until the end of the array or string.
@@ -246,8 +245,7 @@ console.log(myForEachArr); // undefined
 // The slice() method does not modify the original array or string. Instead, it returns a new array or string that contains the extracted portion.
 
 // Example 1: Using slice() on Arrays
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3, 4, 5];
 
 // const slicedArr = arr.slice(1, 4);
@@ -258,8 +256,7 @@ console.log(myForEachArr); // undefined
 // arr.slice(1, 4) starts at index 1 and ends at index 4, but does not include the element at index 4.
 // The original arr remains unchanged.
 // Example 2: Using slice() with Negative Indexes
-// javascript
-// Copy code
+
 // const arr = [10, 20, 30, 40, 50];
 
 // const slicedArr = arr.slice(-3, -1);
@@ -269,8 +266,7 @@ console.log(myForEachArr); // undefined
 
 // arr.slice(-3, -1) starts from the third-to-last element (index -3, which is 30) and ends just before the last element (index -1, which is 50).
 // Example 3: Using slice() without end Parameter
-// javascript
-// Copy code
+
 // const arr = ['apple', 'banana', 'cherry', 'date'];
 
 // const slicedArr = arr.slice(2);
@@ -281,8 +277,7 @@ console.log(myForEachArr); // undefined
 // arr.slice(2) extracts elements starting from index 2 (which is 'cherry') to the end of the array.
 // The original array is not modified.
 // Example 4: Using slice() on Strings
-// javascript
-// Copy code
+
 // const str = "Hello, World!";
 
 // const slicedStr = str.slice(7, 12);
@@ -293,8 +288,7 @@ console.log(myForEachArr); // undefined
 // str.slice(7, 12) extracts the portion of the string starting at index 7 and ending just before index 12, which is "World".
 // The original string remains unchanged.
 // Example 5: Using Negative Indexes with Strings
-// javascript
-// Copy code
+
 // const str = "JavaScript";
 
 // const slicedStr = str.slice(-6, -1);
@@ -306,20 +300,17 @@ console.log(myForEachArr); // undefined
 // Edge Cases
 // Empty Array or String
 // If the start index is greater than or equal to the array length (or string length), an empty array or string will be returned.
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 // console.log(arr.slice(5)); // Output: []
 // Negative start Index
 // If start is negative, it is treated as an offset from the end of the array or string.
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3, 4, 5];
 // console.log(arr.slice(-3, -1)); // Output: [3, 4]
 // start greater than end
 // If the start index is greater than the end index, an empty array will be returned.
-// javascript
-// Copy code
+
 // const arr = [10, 20, 30, 40, 50];
 // console.log(arr.slice(3, 2)); // Output: []
 // Summary of slice()
@@ -350,8 +341,7 @@ console.log(myForEachArr); // undefined
 // The concat() method does not modify the original array or string. Instead, it returns a new array or new string that contains the combined values.
 
 // Example 1: Using concat() on Arrays
-// javascript
-// Copy code
+
 // const arr1 = [1, 2, 3];
 // const arr2 = [4, 5, 6];
 // const arr3 = [7, 8, 9];
@@ -366,8 +356,7 @@ console.log(myForEachArr); // undefined
 // Example 2: Concatenating Single Values to an Array
 // You can also concatenate individual values to an array.
 
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 // const newArr = arr.concat(4, 5);
 // console.log(newArr); // Output: [1, 2, 3, 4, 5]
@@ -378,8 +367,7 @@ console.log(myForEachArr); // undefined
 // Example 3: Concatenating Nested Arrays
 // If you concatenate an array that contains other arrays, it does not flatten the arrays by default.
 
-// javascript
-// Copy code
+
 // const arr1 = [1, 2];
 // const arr2 = [3, 4];
 // const arr3 = [5, 6];
@@ -389,8 +377,7 @@ console.log(myForEachArr); // undefined
 // However, if you want to flatten nested arrays, you would need to use methods like flat() in addition to concat().
 
 // Example 4: Using concat() with Strings
-// javascript
-// Copy code
+
 // const str1 = "Hello";
 // const str2 = " ";
 // const str3 = "World!";
@@ -404,8 +391,7 @@ console.log(myForEachArr); // undefined
 // Example 5: Concatenating Arrays and Strings
 // You can concatenate arrays with strings, and vice versa.
 
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 // const str = "4";
 
@@ -430,8 +416,7 @@ console.log(myForEachArr); // undefined
 // concat() creates a new array and leaves the original unchanged.
 // push() adds elements to the end of the existing array and modifies it.
 // Example: concat() vs push()
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 
 // // Using `concat()`
@@ -600,8 +585,7 @@ const result = numbers.includes(2 ,4 );
 // The reverse() method in JavaScript is used to reverse the order of the elements in an array. This method modifies the original array by reversing its elements in place and returns a reference to the same array.
 
 // Syntax of reverse()
-// javascript
-// Copy code
+
 // array.reverse();
 // No parameters: The reverse() method works directly on the array and reverses its order of elements.
 // How reverse() Works
@@ -611,8 +595,7 @@ const result = numbers.includes(2 ,4 );
 // Mutates the array, meaning it changes the original array and does not create a new array.
 // Returns the same array after reversing it.
 // Example 1: Reversing an Array
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3, 4, 5];
 
 // const reversedArr = arr.reverse();
@@ -624,14 +607,12 @@ const result = numbers.includes(2 ,4 );
 // The original array arr is modified.
 // The reverse() method returns the reversed array.
 // Example 2: Reversing an Empty Array
-// javascript
-// Copy code
+
 // const emptyArr = [];
 // console.log(emptyArr.reverse()); // Output: []
 // Reversing an empty array still results in an empty array because there are no elements to reverse.
 // Example 3: Reversing an Array of Strings
-// javascript
-// Copy code
+
 // const words = ['apple', 'banana', 'cherry'];
 // console.log(words.reverse()); // Output: ['cherry', 'banana', 'apple']
 // Here:
@@ -639,8 +620,7 @@ const result = numbers.includes(2 ,4 );
 // The elements of the words array (strings) are reversed.
 // The original array words is modified.
 // Example 4: Reversing an Array of Numbers
-// javascript
-// Copy code
+
 // const numbers = [10, 20, 30, 40];
 // console.log(numbers.reverse()); // Output: [40, 30, 20, 10]
 // In this case:
@@ -648,8 +628,7 @@ const result = numbers.includes(2 ,4 );
 // The elements of the numbers array are reversed.
 // The original array numbers is modified in place.
 // Example 5: Reversing an Array of Objects
-// javascript
-// Copy code
+
 // const people = [{ name: 'Alice' }, { name: 'Bob' }, { name: 'Charlie' }];
 // console.log(people.reverse()); 
 // // Output: [{ name: 'Charlie' }, { name: 'Bob' }, { name: 'Alice' }]
@@ -673,8 +652,7 @@ const result = numbers.includes(2 ,4 );
 // Example of Avoiding Mutation Using slice()
 // If you want to reverse an array without modifying the original array, you can use slice() to create a shallow copy before reversing it:
 
-// javascript
-// Copy code
+
 // const originalArr = [1, 2, 3, 4];
 
 // const reversedArr = originalArr.slice().reverse();
@@ -740,8 +718,7 @@ const result = numbers.includes(2 ,4 );
 // The join() method in JavaScript is used to join all the elements of an array into a single string. It takes an optional parameter that specifies the separator to use between the elements.
 
 // Syntax of join()
-// javascript
-// Copy code
+
 // array.join(separator);
 // separator (optional): A string that separates each pair of elements. If not provided, the default separator is a comma (,).
 // If you pass an empty string ("") as a separator, the elements will be concatenated without any spaces between them.
@@ -750,8 +727,7 @@ const result = numbers.includes(2 ,4 );
 // The separator you specify is inserted between the elements.
 // It does not modify the original array but returns a new string.
 // Example 1: Using join() with Default Separator (Comma)
-// javascript
-// Copy code
+
 // const arr = ['apple', 'banana', 'cherry'];
 // const result = arr.join();
 // console.log(result); // Output: "apple,banana,cherry"
@@ -761,8 +737,7 @@ const result = numbers.includes(2 ,4 );
 // Example 2: Using join() with Custom Separator
 // You can specify a custom separator by passing a string to the join() method.
 
-// javascript
-// Copy code
+
 // const arr = ['apple', 'banana', 'cherry'];
 // const result = arr.join(' - ');
 // console.log(result); // Output: "apple - banana - cherry"
@@ -772,8 +747,7 @@ const result = numbers.includes(2 ,4 );
 // Example 3: Using join() with Empty String as Separator
 // If you pass an empty string as the separator, the elements will be concatenated without any space.
 
-// javascript
-// Copy code
+
 // const arr = ['a', 'b', 'c'];
 // const result = arr.join('');
 // console.log(result); // Output: "abc"
@@ -783,8 +757,7 @@ const result = numbers.includes(2 ,4 );
 // Example 4: Using join() with a Different Separator
 // You can use any string as the separator. For instance, a semicolon (;):
 
-// javascript
-// Copy code
+
 // const arr = ['John', 'Paul', 'George', 'Ringo'];
 // const result = arr.join('; ');
 // console.log(result); // Output: "John; Paul; George; Ringo"
@@ -792,8 +765,7 @@ const result = numbers.includes(2 ,4 );
 
 // The separator is "; ", so each name is separated by a semicolon and a space.
 // Example 5: Using join() with an Array of Numbers
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4, 5];
 // const result = numbers.join(' + ');
 // console.log(result); // Output: "1 + 2 + 3 + 4 + 5"
@@ -803,8 +775,7 @@ const result = numbers.includes(2 ,4 );
 // Example 6: Edge Case: Empty Array
 // If the array is empty, join() will return an empty string.
 
-// javascript
-// Copy code
+
 // const emptyArr = [];
 // const result = emptyArr.join();
 // console.log(result); // Output: ""
@@ -814,8 +785,7 @@ const result = numbers.includes(2 ,4 );
 // Example 7: Joining Array with undefined or null Elements
 // If an array contains undefined or null, those elements are converted to an empty string during the join() operation.
 
-// javascript
-// Copy code
+
 // const arr = [1, null, 2, undefined, 3];
 // const result = arr.join(' - ');
 // console.log(result); // Output: "1 -  - 2 -  - 3"
@@ -852,8 +822,7 @@ const result = numbers.includes(2 ,4 );
 // The split() method in JavaScript is used to split a string into an array of substrings, based on a specified separator. The split() method can take a string or a regular expression as the separator.
 
 // Syntax of split()
-// javascript
-// Copy code
+
 // string.split(separator, limit);
 // separator (optional): The character, string, or regular expression that specifies where each split should occur.
 // If not provided, the entire string is returned as a single element in the array.
@@ -863,8 +832,7 @@ const result = numbers.includes(2 ,4 );
 // Each substring is created based on where the separator occurs in the original string.
 // It does not modify the original string but returns a new array of substrings.
 // Example 1: Splitting a String by Space
-// javascript
-// Copy code
+
 // const str = "Hello World JavaScript";
 // const arr = str.split(' ');
 // console.log(arr); // Output: ["Hello", "World", "JavaScript"]
@@ -872,8 +840,7 @@ const result = numbers.includes(2 ,4 );
 
 // The string is split wherever a space (' ') occurs, resulting in an array of words.
 // Example 2: Splitting a String by Comma
-// javascript
-// Copy code
+
 // const str = "apple,banana,cherry";
 // const arr = str.split(',');
 // console.log(arr); // Output: ["apple", "banana", "cherry"]
@@ -883,8 +850,7 @@ const result = numbers.includes(2 ,4 );
 // Example 3: Using a Regular Expression as Separator
 // You can use regular expressions as separators. For example, to split by any whitespace (space, tab, newline):
 
-// javascript
-// Copy code
+
 // const str = "apple banana\tcherry\norange";
 // const arr = str.split(/\s+/); // Split by one or more whitespace characters
 // console.log(arr); // Output: ["apple", "banana", "cherry", "orange"]
@@ -894,8 +860,7 @@ const result = numbers.includes(2 ,4 );
 // Example 4: Limiting the Number of Splits
 // You can specify a limit to restrict the number of elements in the resulting array.
 
-// javascript
-// Copy code
+
 // const str = "apple,banana,cherry,orange";
 // const arr = str.split(',', 2);
 // console.log(arr); // Output: ["apple", "banana"]
@@ -905,8 +870,7 @@ const result = numbers.includes(2 ,4 );
 // Example 5: Splitting by Empty String
 // If you provide an empty string ("") as the separator, each character of the string becomes an individual element in the array.
 
-// javascript
-// Copy code
+
 // const str = "hello";
 // const arr = str.split('');
 // console.log(arr); // Output: ["h", "e", "l", "l", "o"]
@@ -916,8 +880,7 @@ const result = numbers.includes(2 ,4 );
 // Example 6: Splitting with No Separator
 // If you omit the separator entirely, the split() method will return the entire string as the only element in the array.
 
-// javascript
-// Copy code
+
 // const str = "apple,banana,cherry";
 // const arr = str.split();
 // console.log(arr); // Output: ["apple,banana,cherry"]
@@ -927,8 +890,7 @@ const result = numbers.includes(2 ,4 );
 // Example 7: Split with undefined or null Separator
 // If you pass undefined or null as the separator, JavaScript will treat it as if you didn't provide a separator, effectively splitting the string at each character.
 
-// javascript
-// Copy code
+
 // const str = "apple,banana,cherry";
 // const arr = str.split(undefined);
 // console.log(arr); // Output: ["apple,banana,cherry"]
@@ -938,8 +900,7 @@ const result = numbers.includes(2 ,4 );
 // Edge Case: Empty String
 // If the string is empty and you call split(), it will return an array with a single empty string element, unless you specify a limit.
 
-// javascript
-// Copy code
+
 // const str = "";
 // const arr = str.split(',');
 // console.log(arr); // Output: [""]
@@ -1075,8 +1036,7 @@ console.log(totalPrice);
 // The spread operator (...) in JavaScript is a powerful syntax that allows you to expand or "spread" elements of an iterable (like an array or object) into individual elements. It can be used in various contexts, such as copying, merging, and destructuring arrays or objects.
 
 // Syntax
-// javascript
-// Copy code
+
 // // For Arrays
 // const arr = [...iterable];
 
@@ -1086,8 +1046,7 @@ console.log(totalPrice);
 // 1. Expanding an Array
 // You can use the spread operator to spread the elements of an array into a new array.
 
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 // const newArr = [...arr, 4, 5];
 
@@ -1095,8 +1054,7 @@ console.log(totalPrice);
 // 2. Copying an Array
 // The spread operator is often used to clone an array, creating a shallow copy of it. This is helpful when you want to avoid modifying the original array.
 
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3];
 // const arrCopy = [...arr];
 
@@ -1104,8 +1062,7 @@ console.log(totalPrice);
 // 3. Merging Arrays
 // You can merge multiple arrays into one using the spread operator.
 
-// javascript
-// Copy code
+
 // const arr1 = [1, 2];
 // const arr2 = [3, 4];
 // const arr3 = [5, 6];
@@ -1116,8 +1073,7 @@ console.log(totalPrice);
 // 4. Merging Objects
 // The spread operator can also be used with objects to merge them or create a shallow copy.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice', age: 25 };
 // const obj2 = { city: 'New York', country: 'USA' };
 
@@ -1128,8 +1084,7 @@ console.log(totalPrice);
 // 5. Copying an Object
 // Similar to arrays, you can use the spread operator to copy an object into another, creating a shallow copy.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice', age: 25 };
 // const objCopy = { ...obj1 };
 
@@ -1137,8 +1092,7 @@ console.log(totalPrice);
 // 6. Adding New Properties to an Object
 // You can use the spread operator to add new properties to an existing object while retaining the original properties.
 
-// javascript
-// Copy code
+
 // const obj1 = { name: 'Alice', age: 25 };
 // const obj2 = { ...obj1, city: 'New York' };
 
@@ -1148,8 +1102,7 @@ console.log(totalPrice);
 // The spread operator can also be used in destructuring assignments to collect the remaining elements or properties into a new array or object.
 
 // Array Destructuring:
-// javascript
-// Copy code
+
 // const arr = [1, 2, 3, 4, 5];
 
 // const [first, second, ...rest] = arr;
@@ -1158,8 +1111,7 @@ console.log(totalPrice);
 // console.log(second); // Output: 2
 // console.log(rest);   // Output: [3, 4, 5]
 // Object Destructuring:
-// javascript
-// Copy code
+
 // const person = { name: 'Alice', age: 25, city: 'New York' };
 
 // const { name, ...otherInfo } = person;
@@ -1172,8 +1124,7 @@ console.log(totalPrice);
 // 1. Spread: Expanding Elements (Used in Arrays or Objects)
 // The spread operator is used when you want to expand or copy elements or properties.
 
-// javascript
-// Copy code
+
 // // Spread in arrays
 // const arr = [1, 2, 3];
 // const newArr = [...arr, 4, 5];  // Expanding the array into new elements
@@ -1184,8 +1135,7 @@ console.log(totalPrice);
 // 2. Rest: Collecting Remaining Elements (Used in Function Parameters or Destructuring)
 // The rest operator is used when you want to collect remaining elements or arguments.
 
-// javascript
-// Copy code
+
 // // Rest in function parameters
 // function sum(...numbers) {
 //   return numbers.reduce((acc, num) => acc + num, 0);

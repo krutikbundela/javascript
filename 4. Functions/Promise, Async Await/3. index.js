@@ -32,8 +32,7 @@
 // Functional Programming: Enable the use of map, filter, reduce, and other functional programming techniques.
 // Examples of Higher-Order Functions
 // 1. Passing a Function as an Argument
-// javascript
-// Copy code
+
 // function greet(name) {
 //   console.log(`Hello, ${name}!`);
 // }
@@ -49,8 +48,7 @@
 // processUserInput is a higher-order function because it takes another function (callback) as an argument.
 // greet is passed as the argument to be executed later.
 // 2. Returning a Function
-// javascript
-// Copy code
+
 // function createMultiplier(multiplier) {
 //   return function (number) {
 //     return number * multiplier;
@@ -71,8 +69,7 @@
 // a. map()
 // Applies a function to each element of an array and returns a new array.
 
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4];
 // const squares = numbers.map(num => num * num);
 
@@ -80,8 +77,7 @@
 // b. filter()
 // Filters elements of an array based on a condition.
 
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4, 5];
 // const evenNumbers = numbers.filter(num => num % 2 === 0);
 
@@ -89,8 +85,7 @@
 // c. reduce()
 // Reduces an array to a single value by repeatedly applying a function.
 
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4];
 // const sum = numbers.reduce((acc, num) => acc + num, 0);
 
@@ -98,8 +93,7 @@
 // 4. Function Composition
 // Combining smaller functions to create a more complex one.
 
-// javascript
-// Copy code
+
 // function multiplyByTwo(num) {
 //   return num * 2;
 // }
@@ -129,22 +123,19 @@
 // Higher-order functions often rely on closures to maintain state or context.
 // Practical Examples
 // 1. Delayed Execution with setTimeout
-// javascript
-// Copy code
+
 // function greet() {
 //   console.log('Hello!');
 // }
 
 // setTimeout(greet, 2000); // Executes `greet` after 2 seconds
 // 2. Event Handlers
-// javascript
-// Copy code
+
 // document.querySelector('button').addEventListener('click', () => {
 //   console.log('Button clicked!');
 // });
 // 3. Custom Iterators
-// javascript
-// Copy code
+
 // function forEach(array, callback) {
 //   for (let i = 0; i < array.length; i++) {
 //     callback(array[i], i, array);
@@ -198,8 +189,7 @@
 // A function (caller function) accepts another function (callback) as an argument.
 // Inside the caller function, the callback is executed (often after some operations).
 // Basic Example
-// javascript
-// Copy code
+
 // function greet(name) {
 //   console.log(`Hello, ${name}!`);
 // }
@@ -218,8 +208,7 @@
 // Synchronous Callback
 // Callbacks can be used for synchronous tasks as well. In this case, the callback is executed immediately:
 
-// javascript
-// Copy code
+
 // function calculate(a, b, callback) {
 //   return callback(a, b);
 // }
@@ -243,8 +232,7 @@
 // Callbacks are especially useful for handling asynchronous operations, such as fetching data or waiting for a timer.
 
 // Example: Using setTimeout
-// javascript
-// Copy code
+
 // function delayedGreeting(callback) {
 //   setTimeout(() => {
 //     callback('Alice');
@@ -260,8 +248,7 @@
 // Error-First Callbacks
 // In many Node.js-style APIs, callbacks follow an error-first pattern, where the first argument represents an error (if any), and the second argument represents the result.
 
-// javascript
-// Copy code
+
 // function fetchData(callback) {
 //   const error = false; // Simulating no error
 //   const data = { id: 1, name: 'John' };
@@ -283,8 +270,7 @@
 // });
 // Callbacks in Real-World Scenarios
 // 1. Event Listeners
-// javascript
-// Copy code
+
 // document.getElementById('myButton').addEventListener('click', () => {
 //   console.log('Button clicked!');
 // });
@@ -293,8 +279,7 @@
 // 2. Array Methods
 // Callbacks are heavily used in array methods like map, filter, and forEach:
 
-// javascript
-// Copy code
+
 // const numbers = [1, 2, 3, 4];
 
 // // Using map with a callback
@@ -314,8 +299,7 @@
 // When multiple nested callbacks are used, it can lead to messy and hard-to-read code, often called "callback hell."
 
 // Example of Callback Hell
-// javascript
-// Copy code
+
 // function fetchData(callback) {
 //   setTimeout(() => {
 //     console.log('Data fetched');
@@ -348,8 +332,7 @@
 // Solution: Promises or Async/Await
 // Instead of callbacks, modern JavaScript uses Promises and async/await for better readability and error handling.
 
-// javascript
-// Copy code
+
 // function fetchData() {
 //   return new Promise(resolve => {
 //     setTimeout(() => {

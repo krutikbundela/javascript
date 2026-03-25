@@ -1,8 +1,7 @@
 // The getElementsByClassName method in JavaScript is used to select all elements in the DOM that have a specific class name. It returns a live HTMLCollection of matching elements.
 
 // Syntax
-// javascript
-// Copy code
+
 // let elements = document.getElementsByClassName(classNames);
 // Parameters:
 // classNames: A string containing one or more class names separated by spaces. Only elements that match all the specified classes will be returned.
@@ -20,25 +19,23 @@
 // 1. Select Elements by a Single Class Name
 // HTML:
 // html
-// Copy code
+
 // <div class="item">Item 1</div>
 // <div class="item">Item 2</div>
 // <div class="item">Item 3</div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const items = document.getElementsByClassName('item');
 // console.log(items); // Outputs an HTMLCollection of all elements with class "item"
 // 2. Select Elements by Multiple Class Names
 // HTML:
 // html
-// Copy code
+
 // <div class="box item">Box 1</div>
 // <div class="box">Box 2</div>
 // <div class="item">Item 1</div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const elements = document.getElementsByClassName('box item'); 
 // console.log(elements); // Outputs only the <div class="box item">Box 1</div>
 // 3. Access Elements from the HTMLCollection
@@ -46,13 +43,12 @@
 
 // HTML:
 // html
-// Copy code
+
 // <div class="card">Card 1</div>
 // <div class="card">Card 2</div>
 // <div class="card">Card 3</div>
 // JavaScript:
-// javascript
-// Copy code
+
 // const cards = document.getElementsByClassName('card');
 
 // // Access by index
@@ -65,12 +61,11 @@
 // 4. Change Content or Style of Matching Elements
 // HTML:
 // html
-// Copy code
+
 // <p class="highlight">This is paragraph 1.</p>
 // <p class="highlight">This is paragraph 2.</p>
 // JavaScript:
-// javascript
-// Copy code
+
 // const paragraphs = document.getElementsByClassName('highlight');
 
 // // Change the text color of all matching elements
@@ -82,15 +77,14 @@
 
 // HTML:
 // html
-// Copy code
+
 // <div id="container">
 //   <span class="tag">Tag 1</span>
 //   <span class="tag">Tag 2</span>
 // </div>
 // <button id="addTag">Add Tag</button>
 // JavaScript:
-// javascript
-// Copy code
+
 // const tags = document.getElementsByClassName('tag');
 // const button = document.getElementById('addTag');
 
@@ -120,14 +114,13 @@
 // Example: Real-World Usage
 // HTML:
 // html
-// Copy code
+
 // <div class="notification">Notification 1</div>
 // <div class="notification">Notification 2</div>
 // <div class="notification">Notification 3</div>
 // <button id="clear">Clear All</button>
 // JavaScript:
-// javascript
-// Copy code
+
 // const notifications = document.getElementsByClassName('notification');
 // const clearButton = document.getElementById('clear');
 

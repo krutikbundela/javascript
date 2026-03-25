@@ -20,8 +20,7 @@
 // Perform read/write operations using transactions.
 // Example: Using IndexedDB
 // 1. Open/Initialize a Database
-// javascript
-// Copy code
+
 // const dbName = "MyDatabase";
 // let db;
 
@@ -46,8 +45,7 @@
 //   console.error("Database error:", event.target.error);
 // };
 // 2. Add Data to the Database
-// javascript
-// Copy code
+
 // function addData(data) {
 //   const transaction = db.transaction("Users", "readwrite");
 //   const store = transaction.objectStore("Users");
@@ -66,8 +64,7 @@
 // // Example usage
 // addData({ name: "John Doe", email: "john@example.com" });
 // 3. Retrieve Data from the Database
-// javascript
-// Copy code
+
 // function getData(key) {
 //   const transaction = db.transaction("Users", "readonly");
 //   const store = transaction.objectStore("Users");
@@ -86,8 +83,7 @@
 // // Example usage
 // getData(1); // Retrieve data with key `1`
 // 4. Update Data in the Database
-// javascript
-// Copy code
+
 // function updateData(data) {
 //   const transaction = db.transaction("Users", "readwrite");
 //   const store = transaction.objectStore("Users");
@@ -106,8 +102,7 @@
 // // Example usage
 // updateData({ id: 1, name: "Jane Doe", email: "jane@example.com" });
 // 5. Delete Data from the Database
-// javascript
-// Copy code
+
 // function deleteData(key) {
 //   const transaction = db.transaction("Users", "readwrite");
 //   const store = transaction.objectStore("Users");
@@ -126,8 +121,7 @@
 // // Example usage
 // deleteData(1); // Delete data with key `1`
 // 6. Retrieve All Data
-// javascript
-// Copy code
+
 // function getAllData() {
 //   const transaction = db.transaction("Users", "readonly");
 //   const store = transaction.objectStore("Users");
@@ -158,8 +152,7 @@
 // Browser Support
 // IndexedDB is widely supported in modern browsers like Chrome, Firefox, Edge, and Safari. Use feature detection:
 
-// javascript
-// Copy code
+
 // if (!window.indexedDB) {
 //   console.error("IndexedDB is not supported in this browser.");
 // }

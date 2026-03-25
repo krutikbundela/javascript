@@ -175,7 +175,7 @@
 
 
 
-// You said:
+
 // weakset
 
 // A WeakSet is a collection in JavaScript that behaves similarly to a Set, but with a few key differences. The primary distinction is that a WeakSet only stores objects and its references are weak, meaning they do not prevent garbage collection if there are no other references to the object.

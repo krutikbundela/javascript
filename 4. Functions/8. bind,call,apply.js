@@ -252,7 +252,7 @@ anotherWay();
 
 
 
-// You said:
+
 // call() 
 
 // The call() method in JavaScript is used to invoke a function with a specific this value and arguments provided individually. It allows you to explicitly set the this context for a function, which is useful when you want to control the execution context, especially in situations like callbacks or event handling.
@@ -380,7 +380,7 @@ anotherWay();
 
 
 
-// You said:
+
 // apply()
 
 // The apply() method in JavaScript is very similar to the call() method. It is used to invoke a function with a specific this value, but the main difference lies in how arguments are passed to the function. While call() takes arguments individually, apply() takes the arguments as an array or array-like object.

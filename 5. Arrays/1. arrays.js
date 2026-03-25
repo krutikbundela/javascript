@@ -813,7 +813,7 @@ const moreNumbers = Array.from('hi!');
 
 
 
-// You said:
+
 // split
 
 // The split() method in JavaScript is used to split a string into an array of substrings, based on a specified separator. The split() method can take a string or a regular expression as the separator.
